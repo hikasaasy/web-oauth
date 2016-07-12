@@ -50,7 +50,9 @@ if (!isset($access_token) || $access_token == ""
             if(!isset($accountName) || $accountName == ""){
               echo "取引先名を入力してください";
             }else{
+              echo $accountName . "を登録します";
               $id = create_account($accountName, $instance_url, $access_token);
+              echo $id . "を登録しました";
             }
             ?>
         </tt>
