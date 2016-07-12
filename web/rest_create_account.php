@@ -20,14 +20,14 @@ if (!isset($access_token) || $access_token == ""
 |
 	      <a href="rest_show_account.php">取引先詳細表示</a>
 |
-	      取引先作成
+	      <b>取引先作成</b>
 |
 	      <a href="rest_update_account.php">取引先更新</a>
 |
 	      <a href="rest_delete_account.php">取引先削除</a>
 <br/>
 <form method="post">
-  <input type="text" name="acccountName" />
+  <input type="text" name="accountName" />
   <input type="submit" value="登録" />
 </form>
 <!--
