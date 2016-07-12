@@ -26,6 +26,7 @@ if (!isset($access_token) || $access_token == ""
 |
 <a href="rest_delete_account.php">取引先削除</a>
 <br/>
+<br/>
 <form method="post">
   <input type="text" name="accountId" />
   <input type="submit" value="表示" />

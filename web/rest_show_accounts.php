@@ -26,6 +26,7 @@ if (!isset($access_token) || $access_token == ""
 |
 	      <a href="rest_delete_account.php">取引先削除</a>
 <br/>
+<br/>
             <?php
             show_accounts($instance_url, $access_token);
             ?>

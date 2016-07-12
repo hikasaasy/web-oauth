@@ -26,6 +26,7 @@ if (!isset($access_token) || $access_token == ""
 |
 	      <b>取引先削除</b>
 <br/>
+<br/>
 <form method="post">
   <input type="text" name="accountId" />
   <input type="submit" value="削除" />
