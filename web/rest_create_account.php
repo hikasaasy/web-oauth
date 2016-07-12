@@ -30,21 +30,6 @@ if (!isset($access_token) || $access_token == ""
   <input type="text" name="accountName" />
   <input type="submit" value="登録" />
 </form>
-<!--
-// show_accounts($instance_url, $access_token) {
-// create_account($name, $instance_url, $access_token) {
-// show_account($id, $instance_url, $access_token) {
-// update_account($id, $new_name, $city, $instance_url, $access_token) {
-// delete_account($id, $instance_url, $access_token) {
-            // $id = create_account("My New Org", $instance_url, $access_token);
-            // show_account($id, $instance_url, $access_token);
-            // show_accounts($instance_url, $access_token);
-            // update_account($id, "My New Org, Inc", "San Francisco", $instance_url, $access_token);
-            // show_account($id, $instance_url, $access_token);
-            // show_accounts($instance_url, $access_token);
-            // delete_account($id, $instance_url, $access_token);
-            // show_accounts($instance_url, $access_token);
--->
             <?php
             $accountName = $_POST['accountName'];
             if(strlen($accountName) == 0){
