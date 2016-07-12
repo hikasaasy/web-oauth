@@ -2,18 +2,15 @@
 session_start();
 require_once 'rest_func.php';
 $access_token = $_SESSION['access_token'];
-            $instance_url = $_SESSION['instance_url'];
-
-            if (!isset($access_token) || $access_token == "") {
+$instance_url = $_SESSION['instance_url'];
+if (!isset($access_token) || $access_token == "") {
 //                die("Error - access token missing from session!");
 		header('Location: index.html');
-            }
-
-            if (!isset($instance_url) || $instance_url == "") {
+}
+if (!isset($instance_url) || $instance_url == "") {
 //                die("Error - instance URL missing from session!");
 		header('Location: index.html');
-            }
-
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -32,7 +29,9 @@ $access_token = $_SESSION['access_token'];
 	      <a href="rest_update_account.php">取引先更新</a>
 |
 	      <a href="rest_delete_account.php">取引先削除</a>
-<br/>
+        <br/>
+        <br/>
+
             <?php
 //            show_accounts($instance_url, $access_token);
 // $id = create_account("My New Org", $instance_url, $access_token);
