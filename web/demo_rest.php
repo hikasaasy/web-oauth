@@ -33,29 +33,15 @@ $access_token = $_SESSION['access_token'];
 |
 	      <a href="rest_delete_account.php">取引先削除</a>
 <br/>
-// show_accounts($instance_url, $access_token) {
-// create_account($name, $instance_url, $access_token) {
-// show_account($id, $instance_url, $access_token) {
-// update_account($id, $new_name, $city, $instance_url, $access_token) {
-// delete_account($id, $instance_url, $access_token) {
-
             <?php
-            show_accounts($instance_url, $access_token);
-
-            // $id = create_account("My New Org", $instance_url, $access_token);
-
+//            show_accounts($instance_url, $access_token);
+// $id = create_account("My New Org", $instance_url, $access_token);
             // show_account($id, $instance_url, $access_token);
-
             // show_accounts($instance_url, $access_token);
-
             // update_account($id, "My New Org, Inc", "San Francisco", $instance_url, $access_token);
-
             // show_account($id, $instance_url, $access_token);
-
             // show_accounts($instance_url, $access_token);
-
             // delete_account($id, $instance_url, $access_token);
-
             // show_accounts($instance_url, $access_token);
             ?>
         </tt>

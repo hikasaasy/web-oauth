@@ -16,7 +16,7 @@ if (!isset($access_token) || $access_token == ""
     </head>
     <body>
         <tt>
-	      取引先リスト
+	      <b>取引先リスト</b>
 |
 	      <a href="rest_show_account.php">取引先詳細表示</a>
 |
