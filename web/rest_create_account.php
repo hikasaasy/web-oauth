@@ -47,7 +47,7 @@ if (!isset($access_token) || $access_token == ""
 -->
             <?php
             $accountName = $_POST['accountName'];
-            if(!isset($accountName) || $accountName == ""){
+            if(strlen($accountName) == 0){
               echo "取引先名を入力してください";
             }else{
               echo $accountName . "を登録します";
