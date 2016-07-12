@@ -22,21 +22,27 @@ if (!isset($access_token) || $access_token == ""
 |
 <a href="rest_create_account.php">取引先作成</a>
 |
-	      <a href="rest_update_account.php">取引先更新</a>
+	      <b>取引先更新</b>
 |
-	      <b>取引先削除</b>
+<a href="rest_delete_account.php">取引先削除</a>
 <br/>
 <form method="post">
-  <input type="text" name="accountId" />
+  ID: <input type="text" name="accountId" />
+  , 住所: <input type="text" name="accountCity" />
   <input type="submit" value="削除" />
 </form>
             <?php
             $accountId = $_POST['accountId'];
+            $accountCity = $_POST['accountCity'];
             if(strlen($accountId) == 0){
               echo "取引先IDを入力してください";
             }else{
-              echo $accountId . "を削除します<br/>";
-              delete_account($accountId, $instance_url, $access_token);
+              if(strlen($accountCity) == 0){
+                echo "住所を入力してください";
+              }else{
+                echo $accountId . "を更新します<br/>";
+                update_account($accountId, $accountCity, $instance_url, $access_token);
+              }
             }
             ?>
         </tt>
