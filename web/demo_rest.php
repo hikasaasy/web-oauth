@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once 'rest_func.php';
-            $access_token = $_SESSION['access_token'];
+$access_token = $_SESSION['access_token'];
             $instance_url = $_SESSION['instance_url'];
 
             if (!isset($access_token) || $access_token == "") {
@@ -23,6 +23,22 @@ require_once 'rest_func.php';
     </head>
     <body>
         <tt>
+	      <a href="rest_show_accounts.php">取引先リスト</a>
+|
+	      <a href="rest_show_account.php">取引先詳細表示</a>
+|
+	      <a href="rest_create_account.php">取引先作成</a>
+|
+	      <a href="rest_update_account.php">取引先更新</a>
+|
+	      <a href="rest_delete_account.php">取引先削除</a>
+<br/>
+// show_accounts($instance_url, $access_token) {
+// create_account($name, $instance_url, $access_token) {
+// show_account($id, $instance_url, $access_token) {
+// update_account($id, $new_name, $city, $instance_url, $access_token) {
+// delete_account($id, $instance_url, $access_token) {
+
             <?php
             show_accounts($instance_url, $access_token);
 
