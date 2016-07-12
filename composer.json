@@ -1,0 +1,9 @@
+{
+  "require" : {
+   "ext-soap": "*"
+
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}

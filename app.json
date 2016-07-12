@@ -1,0 +1,15 @@
+{
+  "name": "PHP Starter",
+  "description": "start php app on heroku via api",
+  "website": "http://php.net",
+  "repository": "https://github.com/toroio-alex/heroku-php-test",
+  "scripts": {
+    "postdeploy": "composer install"
+  },
+  "env": {
+    "PHP_ENV": "production",
+    "PHP_ENV": "production",
+    "PHP_SERVE_STATIC_FILES": "true"
+  },
+  "addons": ["heroku-postgresql"]
+}
